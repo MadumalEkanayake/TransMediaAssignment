@@ -13,7 +13,7 @@ A test automation framework designed to verify the functionality of web applicat
 
 - `BaseAPITest.java`: Foundation for API test execution  
 - `BaseUITest.java`: Foundation for UI test execution  
-- `UtilHelper.java`: Common utility functions
+- `JsonFileRead.java`: Read Json files
 
 ### Page Object Model (POM) Layer
 
@@ -43,3 +43,9 @@ Contains UI test implementations:
 ### Constants
 
 - `Constants.java`: Contains the test data
+
+### Reporting
+- `ExtentReportManager.java`: Contains common report configuration
+- `Report path`: test-output/ExtentReport.html
+- ![image](https://github.com/user-attachments/assets/236e7308-4462-4ce2-9212-24279d07650c)
+
