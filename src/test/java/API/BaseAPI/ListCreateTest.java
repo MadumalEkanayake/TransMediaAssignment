@@ -2,6 +2,7 @@ package API.BaseAPI;
 
 
 import API.BaseAPI.Util.JsonFileRead;
+import Common.Constants;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -48,7 +49,7 @@ public class ListCreateTest extends BaseAPITest {
             String LISTID = location.substring(location.lastIndexOf("/") + 1);
 
             //write location into util file
-            try (FileWriter writer = new FileWriter("src/main/resources/listId.txt")) {
+            try (FileWriter writer = new FileWriter(Constants.TEXTPATH)) {
                 writer.write(LISTID);
             }
 
